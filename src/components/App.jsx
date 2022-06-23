@@ -25,13 +25,13 @@ export function App() {
     const { name } = e.target;
     switch (name) {
       case 'good':
-        setGood(state => +1);
+        setGood(state => state + 1);
         break;
       case 'neutral':
-        setNeutral(state => +1);
+        setNeutral(state => state + 1);
         break;
       case 'bad':
-        setBad(state => +1);
+        setBad(state => state + 1);
         break;
       default:
         return new Error('State doesn`t exist');
